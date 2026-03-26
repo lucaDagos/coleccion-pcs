@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi colección de Photocards</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>La colección de Lu</h1>
+    <p class="subtitle">Añadí, guardá y navegá tu colección — guardado local en el navegador.</p>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <h2>Añadir photocard</h2>
+      <form id="cardForm">
+        <label>Título: <input id="title" required /></label>
+        <label>Miembro / Nota: <input id="member" /></label>
+        <label>Imagen (URL): <input id="image" placeholder="opcional: https://..." /></label>
+        <div class="actions">
+          <button type="submit">Agregar</button>
+          <button type="button" id="clearStorage">Borrar todo</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>Tu colección</h2>
+      <button id="filterFav">Mostrar favoritas ⭐</button>
+      <div id="cardsContainer" class="cards"></div>
+      <p id="emptyMsg" class="empty">No hay photocards todavía — agregá la primera 😊</p>
+    </section>
+  </main>
+
+  <footer>
+    <small>Proyecto simple para practicar HTML/CSS/JS — guardado en localStorage.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
